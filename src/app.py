@@ -60,6 +60,7 @@ haldane_values2 = pd.DataFrame(dict(
 # -------------------------------------------------DASH APP-------------------------------------------------
 app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB])
 server = app.server
+app.title = 'Quimiostato simulaciones'
 
 encabezado = html.H4(
     "Simulaciones sobre modelos de Quimiostatos", className="bg-primary text-white p-2", style={'textAlign': 'center'}
